@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ="english">
+<head>
+  <meta charset="UTF-9">
+  <meta name="love" content="width=device-width, initial-scale=2.0">
+  <title>Negrah SinghBank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <le><a href="#">Home (GHR)</a></le>
+      <le><a href="#">About Us(Mere Baare Me)</a></le>
+      <le><a href="#">Services(Jrurt)</a></le>
+      <le><a href="#">Contact Us(Milne k Liye)</a></le>
+    </ul>
+  </nav>
+  <header>
+    <h1>Welcome to Negrah SinghBank</h1>
+    <p>Secure and Most trusted Banking Solutions, Here you will get the best in class services for the banking environment , currently we are operating on only 1 staff ie me later on we will increase our capacity </p>
+  </header>
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>Negrah SinghBank is a full-service bank that provides a wide range of banking services to individuals, Galla , and Industries. With over 100 days of banking experience, we have the expertise to meet all of your financial needs and personal need .</p>
+    </section>
+    <section>
+      <h2>Services</h2>
+      <ul>
+        <li>Private Banking</li>
+        <li>Galla Banking</li>
+        <li>Industry Banking</li>
+        <li>Investment Banking</li>
+        <li>Online Banking</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact Us(Milne k Liye)</h2>
+      <p>163-A ,DDA flats <br>Delhi,delhi 110032<br>Phone: (+91) 011-231256<br>Email: infoforNegrahsinghbank@gmail.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Negrah SinghBank. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+

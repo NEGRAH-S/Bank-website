@@ -1,0 +1,62 @@
+## CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #222;
+  background-color: #f1f1f1;
+}
+
+nav {
+  background-color: #111;
+  color: #fff;
+  padding: 12px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+header {
+  background-image: url("https://www.bing.com/images/search?view=detailV2&ccid=avb9nDfw&id=5CA97F3E3C89743E9CE3D151D5BAD36A32AA99E7&thid=OIP.avb9nDfw3kq7NOoP0grM4wHaEK&mediaurl=https%3a%2f%2fmy.alfred.edu%2fzoom%2f_images%2ffoster-lake.jpg&exph=3261&expw=5797&q=image&simid=608012935455139443&FORM=IRPRST&ck=BC88B1E1E31EDA5B01548EEE6BD0ED35&selectedIndex=1&ajaxhist=0&ajaxserp=0");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 46px;
+  font-weight: italics;
+  text-align: left;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+header p {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 
+
+
+
