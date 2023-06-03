@@ -1,0 +1,57 @@
+from flask import Flask, request, jsonify
+
+app = Flask( Negrah SinghBank )
+
+# Sample data
+accounts = {
+    "account1": {
+        "id": "account1",
+        "name": "Joe root ",
+        "balance": 5000.0
+    },
+    "account2": {
+        "id": "account2",
+        "name": "steve Smith",
+        "balance": 3000.0
+    }
+}
+
+# API endpoints
+@app.route("/accounts", methods=["GET"])
+def get_accounts():
+    return jsonify(accounts)
+
+@app.route("/accounts/<account_id>", methods=["GET"])
+def get_account(account_id):
+    if account_id in accounts:
+        return jsonify(accounts[account_id])
+    else:
+        return jsonify({"error": "Account not found"}), 404
+
+@app.route("/accounts/<account_id>/deposit", methods=["POST"])
+def deposit(account_id):
+    amount = float(request.json.get("amount", 0))
+    if account_id in accounts:
+        account = accounts[account_id]
+        account["balance"] += amount
+        return jsonify({"message": "Deposit successful"})
+    else:
+        return jsonify({"error": "Account not found"}), 404
+
+@app.route("/accounts/<account_id>/withdraw", methods=["POST"])
+def withdraw(account_id):
+    amount = float(request.json.get("amount", 0))
+    if account_id in accounts:
+        account = accounts[account_id]
+        if account["balance"] >= amount:
+            account["balance"] -= amount
+            return jsonify({"message": "Withdrawal successful"})
+        else:
+            return jsonify({"error": "Insufficient balance"}), 400
+    else:
+        return jsonify({"error": "Account not found"}), 404
+
+if __name__ == "__main__":
+    app.run()
+
+
